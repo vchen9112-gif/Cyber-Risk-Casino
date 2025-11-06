@@ -37,6 +37,9 @@ Players aim to get a hand value as close to 21 as possible while facing random c
 3.GUI Interface (Optional): Create a graphical interface for a more interactive experience.
 4.Expanded Cybersecurity Events: Add more types of challenges or scenarios to enhance the educational component.
 
+## 🪪 License
+MIT License — free to use and modify for educational purposes.
+
 ### How to Run
 1. Ensure **Python 3** is installed.  
 2. Open **Visual Studio Code** (or any Python IDE).  
