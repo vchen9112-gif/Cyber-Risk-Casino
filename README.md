@@ -1,21 +1,34 @@
-# Cyber Risk Simulator
+# Cyber Risk Simulator (CyberJack-Roulette)
 
 ## 📖 Overview
-Cyber Risk Simulator is an interactive Python-based game that combines cybersecurity concepts with casino-style mechanics, including roulette and blackjack.  
-Players make strategic decisions to manage risk while balancing chance elements, reinforcing practical cybersecurity knowledge in an engaging format.
+Cyber Risk Simulator is a single-player Python game that combines blackjack-inspired mechanics with cybersecurity-themed challenges.  
+Players aim to get a hand value as close to 21 as possible while facing random cybersecurity events, reinforcing concepts such as phishing, firewalls, and encryption in an interactive way.
 
-## 🎮 Features
-- Risk assessment system based on cybersecurity principles  
-- Casino-inspired gameplay mechanics (roulette & blackjack)  
-- Scoring and feedback based on player decisions  
-- Modular Python code for easy expansion  
+## 🎮 How to Play
 
-## 🧰 Tech Stack
-- Python 3  
-- Standard libraries (e.g., `random`, `json`)  
-- Optional GUI: Tkinter (if included)
+**Player:** Single-player against an automated dealer.  
+**Objective:** Get as close to 21 as possible without exceeding it. Cybersecurity-themed events add an educational twist.
 
-## 🚀 How to Run
-1. Clone the repository:  
+### Gameplay Overview
+1. Both the player and dealer receive **two cards** from a shuffled 52-card deck at the start of each round.  
+2. A **roulette wheel** introduces random cybersecurity events:  
+   - **Phishing Alert:** Answer a cybersecurity question correctly to continue your turn.  
+   - **Firewall Down:** Dealer receives an extra card.  
+   - **Zero-Day Exploit:** Dealer’s hand becomes fully visible.  
+   - **System Stable:** No event occurs.  
+3. During your turn, choose to **Hit** (draw another card) or **Stand** (keep your current hand).  
+4. Exceeding 21 results in an **automatic loss**.  
+5. The dealer draws cards until reaching **at least 17**. Exceeding 21 causes the dealer to lose.  
+6. Round outcome:  
+   - Player wins if total is closer to 21 than dealer.  
+   - Dealer wins if total is higher.  
+   - Tie if scores are equal.  
+7. Each round lasts one game, but you can **play indefinitely** until you choose to exit.
+
+### How to Run
+1. Ensure **Python 3** is installed.  
+2. Open **Visual Studio Code** (or any Python IDE).  
+3. Create a `.py` file and paste the code.  
+4. Run the program:  
 ```bash
-git clone https://github.com/vchen9112-gif/Cyber-Risk-Casino.git
+python filename.py
